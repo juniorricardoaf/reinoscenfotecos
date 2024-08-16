@@ -1,0 +1,37 @@
+.figureContainer {
+    display:inline;
+    flex-direction: column;
+    align-items: center;
+    
+    .figureContainerTop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        .figureContainerTopImg {
+            height: 80px;
+            width: 80px;
+            margin: 0 20px;
+            transition: .3s;
+        
+        }
+        .figureContainerTopImg img {
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+        }
+    }
+    
+    .btnChangeFigure {
+        margin-top: 10px;
+    }
+
+    .botonesfigurasrotacion{
+        padding: 10px 15px !important;
+    }
+    #botonInvertir{
+
+        margin-left: 32%;
+    }
+}
+

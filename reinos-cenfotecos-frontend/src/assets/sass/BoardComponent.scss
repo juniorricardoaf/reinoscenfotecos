@@ -1,0 +1,90 @@
+.boardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    height: 490px;
+    position: relative;
+    perspective: 400px;
+    
+    .board {
+        height: 320px !important;
+        background: #dedede;
+        position: absolute;
+        transform-style: preserve-3d;
+        transform: rotateX(20deg) rotateZ(0deg);
+        transition: transform 1.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .side {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .top {
+            padding: 3px 20px 3px 20px;
+            border-color: rgba(185, 185, 185, 0.6);
+            background-image: url("http://www.defondos.com/images/wallpapers/chocolate%20madera%20wood%20wallpaper%20(5)-179985_800.jpeg");
+            //background-size: 100%;
+            transition: 1.5s;
+
+            transform-style: preserve-3d;
+
+            .boardRow {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        .front {
+            background-image: url("http://www.defondos.com/images/wallpapers/chocolate%20madera%20wood%20wallpaper%20(5)-179985_800.jpeg");
+            background-size: 100%;
+            width: 480px;
+            height: 50px;
+            clip-path: polygon(0% 0%, 100% 0%, 92.3% 100%, 7.9% 100%);
+            transform: rotateX(145deg) translateY(-25px);
+            bottom: -65px;
+        }
+
+        .back {
+            background-image: url("http://www.defondos.com/images/wallpapers/chocolate%20madera%20wood%20wallpaper%20(5)-179985_800.jpeg");
+            background-size: 100%;
+                    width: 480px;
+            height: 50px;
+            clip-path: polygon(0% 0%, 100% 0%, 92.3% 100%, 7.9% 100%);
+            transform: rotateX(35deg) translateY(-25px);
+            top: -65px;
+        }
+
+        .left {
+            background-image: url("http://www.defondos.com/images/wallpapers/chocolate%20madera%20wood%20wallpaper%20(5)-179985_800.jpeg");    
+            /*background:
+            linear-gradient(
+                rgb(22, 17, 0),
+                rgb(39, 19, 0),
+                rgb(22, 17, 0));
+                */
+            height: 480px;
+            width: 50px;
+            left: -25px;
+            clip-path: polygon(0% 7.9%, 100% 0%, 100% 100%, 0% 92.3%);
+            transform: rotateY(145deg) translateX(25px);
+        }
+
+        .right {
+            background-image: url("http://www.defondos.com/images/wallpapers/chocolate%20madera%20wood%20wallpaper%20(5)-179985_800.jpeg");
+             height: 480px;
+            width: 50px;
+            right: -25px;
+            clip-path: polygon(0% 7.9%, 100% 0%, 100% 100%, 0% 92.3%);
+            transform: rotateY(35deg) translateX(25px);
+        }
+    }
+}
+
+.resetBtnContainer {
+    margin-top: 2px;
+}
