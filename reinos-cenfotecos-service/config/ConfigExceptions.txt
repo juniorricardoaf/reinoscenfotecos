@@ -1,0 +1,12 @@
+101:Timer no puede inicializar porque el servidor no response.
+500:El formato de personaje que desea crear no existe, intente con otro.
+501:El formato de personaje al que desea asignarle el ataque especial no existe, intente con otro.
+502:El ataque especial que le desea asiganr al personaje no existe, intentelo nuevamente.
+503:Personaje no encontrado, favor envie una identificacion correcta.
+504:No se encontró la patida.
+505:No se encontró el turno señalado.
+506:Usted no cuenta con el personaje indicado.
+300:Partida no encontrado, favor envie una identificacion correcta.
+507:Acción no válida.
+508:Movimiento fuera de los límites válidos, sólo puede moverse una casilla a la vez.
+509:Ataque fuera de los límites válidos, sólo puede atacar a tropas enemigas cerca de la suya.
